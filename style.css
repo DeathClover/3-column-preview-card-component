@@ -1,0 +1,150 @@
+
+
+:root {
+    --grip1-color : hsl(31, 77%, 52%);
+    --grip2-color : hsl(184, 100%, 22%);
+    --grip3-color : hsl(179, 100%, 13%);
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 10%;
+    margin-left: 25%;
+    height: 370px;
+    width: 55%;
+
+}
+
+
+.grid-item1{
+    background-color: var(--grip1-color);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.grid-item2{
+    background-color: var(--grip2-color);
+}
+
+.grid-item3{
+    background-color: var(--grip3-color);
+    border-radius: 0px 5px 5px 0px;
+}
+
+img{
+    width: 50px;
+}
+
+.text{
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 30px;
+    
+}
+
+h1{
+    font-family: 'Big Shoulders Display';
+    color: hsl(0, 0%, 95%);
+    font-size: 35px;
+   
+}
+
+p{
+    font-size: 12px;
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.button1{
+    transition-duration: 0.4s;
+    
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: solid 2px white;
+    cursor:pointer;
+    overflow: hidden;  
+    color: hsl(0, 0%, 95%);  
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 25%;
+}
+
+.button2{
+    transition-duration: 0.4s;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: solid 2px white;
+    cursor:pointer;
+    overflow: hidden;  
+    color: hsl(0, 0%, 95%); 
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 25%; 
+}
+
+.button3{
+    transition-duration: 0.4s;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: solid 2px white;
+    cursor:pointer;
+    overflow: hidden;  
+    color: hsl(0, 0%, 95%); 
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 25%;     
+}
+
+.button1:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: var(--grip1-color);
+}
+
+.button2:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: var(--grip2-color);
+}
+
+.button3:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: var(--grip3-color);
+}
+
+.credit{
+    font-size: small;
+    margin-top: 5%;
+    margin-left: 45%;
+}
+
+@media screen and (max-width: 375px) {
+
+    .grid{
+        grid-template-columns: auto;
+        height: auto;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .grid-item1{
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .grid-item3{
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .button1{
+        margin-top: 0%;
+        margin-bottom: 30%; 
+    }
+    .button2{
+        margin-top: 0%;
+        margin-bottom: 30%; 
+    }
+    .button3{
+        margin-top: 0%;
+        margin-bottom: 30%; 
+    }
+}
